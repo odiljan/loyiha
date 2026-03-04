@@ -1,0 +1,78 @@
+                               Foydalanuvchi boshqaruv tizimi
+Loyiha maqsadi va vazifalari
+
+Ushbu loyiha – bu Python va SQLite yordamida yaratilgan foydalanuvchi ro‘yxatdan o‘tish, login va parol boshqaruvi tizimi. Loyihaning asosiy vazifalari quyidagilar:
+
+Foydalanuvchilarni ro‘yxatdan o‘tkazish (Registratsiya)
+
+Foydalanuvchi username va parol bilan ro‘yxatdan o‘tadi.
+
+Parol xavfsizligi tekshiriladi:
+
+Kamida 8 ta belgi
+
+Katta harf va kichik harf mavjudligi
+
+Raqam mavjudligi
+
+Parollar hash formatida saqlanadi (sha256), ya’ni ular ma’lumotlar bazasida shifrlangan holda bo‘ladi.
+
+Admin foydalanuvchini yaratish
+
+Dastur birinchi ishga tushganda avtomatik admin yaratadi (username="admin", password="Admin123").
+
+Admin foydalanuvchilarni ko‘rish va boshqarish imkoniyatiga ega.
+
+Login tizimi
+
+Foydalanuvchi username va parol bilan tizimga kiradi.
+
+Parol hash orqali tekshiriladi, shuning uchun ma’lumotlar xavfsiz saqlanadi.
+
+Foydalanuvchi paneli
+
+Oddiy foydalanuvchilar: parolni o‘zgartira oladi.
+
+Admin foydalanuvchilar: parolni o‘zgartirish + barcha foydalanuvchilar ro‘yxatini ko‘rish.
+
+Parolni o‘zgartirish
+
+Foydalanuvchi parolni o‘zgartirishi mumkin.
+
+Parol xavfsizligi avtomatik tekshiriladi.
+
+Foydalanuvchi ro‘yxatini ko‘rish (Admin uchun)
+
+ID, username va role ko‘rinishida barcha foydalanuvchilar ro‘yxati.
+
+Ma’lumotlar bazasi (SQLite)
+
+Foydalanuvchi ma’lumotlari users.db faylida saqlanadi.
+
+Har bir foydalanuvchi: id, username, password va role.
+
+Foydalanuvchi interfeysi
+
+Terminal (komandalar satri) orqali ishlaydi.
+
+Menyular oddiy va tushunarli:
+
+Registratsiya
+
+Login
+
+Chiqish
+
+Admin uchun: foydalanuvchilar ro‘yxati
+
+💡 Xulosa:
+Bu loyiha xavfsiz foydalanuvchi boshqaruvi tizimi yaratadi. O‘rganish uchun juda yaxshi, chunki u:
+
+ma’lumotlar bazasi bilan ishlashni,
+
+parol hash qilish va tekshirishni,
+
+foydalanuvchi va admin rollarini boshqarishni,
+
+oddiy terminal interfeysini yaratishni o‘rgatadi.
+
